@@ -1,26 +1,16 @@
-<mat-drawer-container style="height: 100vh;">
-    <mat-drawer-content>
-      <div class="silder">
-        <div class="silder-content">
-          <h1>Something goes here </h1>
-        </div>
-      </div>
-      <div class="features">
-        <div (click)="navigate('student')" class="row">
-          <div  class="column">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-            <h3>I'm a Student</h3>
-            <p>A student looking for a way to reach your center
-            </p>
-          </div>
-          <div (click)="navigate('helper')" class="column">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-            <h3>I'm a volunteer
-            </h3>
-            <p>A Volunteer ready to help  a student in need
-            </p>
-          </div>
-        </div>
-      </div>
-    </mat-drawer-content>
-  </mat-drawer-container>
+<mat-toolbar color="primary">
+  Home
+</mat-toolbar>
+<div class="content">
+  <div class="flex-row">
+    <!-- <mat-form-field class="mr">
+      <mat-label>Select Language</mat-label>
+      <mat-select [(value)]="selected" placeholder="Mode">
+        <mat-option value="English">English</mat-option>
+        <mat-option value="Hindi">Hindi</mat-option>
+      </mat-select>
+    </mat-form-field> -->
+  </div>
+  <br />
+  <app-select></app-select>
+</div>

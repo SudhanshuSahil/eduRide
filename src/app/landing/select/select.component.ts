@@ -1,24 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormControl } from '@angular/forms';
-
 @Component({
-  selector: 'app-landing',
-  templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss']
+  selector: 'app-select',
+  templateUrl: './select.component.html',
+  styleUrls: ['./select.component.scss']
 })
-export class LandingComponent implements OnInit {
+export class SelectComponent implements OnInit {
 
   constructor(private router: Router) { }
-
-  selected = 'English';
-
+  
   navigate(path: string){
     this.router.navigate([path])
   }
-
   ngOnInit() {
-
   }
 
 }
