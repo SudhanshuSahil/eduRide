@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 export class SelectComponent implements OnInit {
 
   constructor(private router: Router) { }
-  
+  loading = false;
   navigate(path: string){
     this.router.navigate([path])
   }
